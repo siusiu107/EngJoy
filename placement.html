@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Placement Test — EngJoy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-semibold">EngJoy</a>
+      <nav class="header-nav flex gap-3"></nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold mb-4">Placement Test — 체계적 레벨 진단</h2>
+    <p class="text-sm text-gray-600 mb-6">약 10문제로 구성된 진단입니다. 점수에 따라 추천 레벨을 제안하고, 로그인 시 프로필에 자동 저장됩니다.</p>
+
+    <div id="test-area" class="bg-white p-6 rounded shadow">
+      <form id="placement-form" class="space-y-4">
+
+        <div class="mb-2">
+          <label class="block font-medium">Q1) Choose the correct sentence:</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q1" value="a"> She don't like coffee.</label><br>
+            <label><input type="radio" name="q1" value="b"> She doesn't like coffee.</label><br>
+            <label><input type="radio" name="q1" value="c"> She aren't like coffee.</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q2) Past tense of 'go'?:</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q2" value="a"> goed</label><br>
+            <label><input type="radio" name="q2" value="b"> went</label><br>
+            <label><input type="radio" name="q2" value="c"> gone</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q3) Choose the word closest in meaning to 'quickly':</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q3" value="a"> slowly</label><br>
+            <label><input type="radio" name="q3" value="b"> rapidly</label><br>
+            <label><input type="radio" name="q3" value="c"> rarely</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q4) I ____ to the store yesterday.</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q4" value="a"> go</label><br>
+            <label><input type="radio" name="q4" value="b"> went</label><br>
+            <label><input type="radio" name="q4" value="c"> gone</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q5) Select the correct article: 'I saw ____ elephant.'</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q5" value="a"> a</label><br>
+            <label><input type="radio" name="q5" value="b"> an</label><br>
+            <label><input type="radio" name="q5" value="c"> the</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q6) Which sentence is grammatically correct?</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q6" value="a"> If I was you, I would go.</label><br>
+            <label><input type="radio" name="q6" value="b"> If I were you, I would go.</label><br>
+            <label><input type="radio" name="q6" value="c"> If I am you, I would go.</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q7) Choose the best preposition: 'She is good ____ math.'</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q7" value="a"> on</label><br>
+            <label><input type="radio" name="q7" value="b"> at</label><br>
+            <label><input type="radio" name="q7" value="c"> in</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q8) Which is a phrasal verb meaning 'cancel'?:</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q8" value="a"> put up</label><br>
+            <label><input type="radio" name="q8" value="b"> call off</label><br>
+            <label><input type="radio" name="q8" value="c"> bring on</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q9) Passive voice of 'They deliver the package.'?</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q9" value="a"> The package is delivered by them.</label><br>
+            <label><input type="radio" name="q9" value="b"> The package delivered them.</label><br>
+            <label><input type="radio" name="q9" value="c"> They are delivered by the package.</label>
+          </div>
+        </div>
+    
+        <div class="mb-2">
+          <label class="block font-medium">Q10) Choose the most appropriate linking word: 'I like tea, ____ I prefer coffee.'</label>
+          <div class="mt-2 space-y-1">
+            <label><input type="radio" name="q10" value="a"> but</label><br>
+            <label><input type="radio" name="q10" value="b"> and</label><br>
+            <label><input type="radio" name="q10" value="c"> so</label>
+          </div>
+        </div>
+    
+        <div class="mt-4 flex gap-3">
+          <button id="submit-test" type="button" class="px-4 py-2 bg-indigo-600 text-white rounded">Submit</button>
+          <button id="save-test" type="button" class="px-4 py-2 border rounded">Save to profile (requires login)</button>
+        </div>
+
+        <div id="result" class="mt-4 hidden p-4 rounded bg-indigo-50"></div>
+      </form>
+      <div class="mt-4 text-sm text-gray-500">Tip: 정확한 추천을 위해 정직하게 답해주세요.</div>
+    </div>
+  </main>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

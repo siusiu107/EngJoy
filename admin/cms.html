@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin CMS — EngJoy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-semibold">EngJoy</a>
+    <nav class="header-nav flex items-center gap-4"></nav>
+  </div>
+</header>
+
+  <main class="max-w-4xl mx-auto mt-12">
+    <div class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">CMS — Courses</h2>
+      <form id="course-form" class="space-y-3">
+        <div>
+          <label class="block text-sm">Course ID</label>
+          <input id="course-id" class="w-full border px-3 py-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm">Title</label>
+          <input id="course-title-input" class="w-full border px-3 py-2 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm">Description</label>
+          <textarea id="course-desc-input" class="w-full border px-3 py-2 rounded"></textarea>
+        </div>
+        <div class="flex gap-3">
+          <button id="save-course" class="px-4 py-2 bg-indigo-600 text-white rounded">Save Course</button>
+          <button id="seed-data" class="px-4 py-2 border rounded">Seed sample data</button>
+        </div>
+      </form>
+      <div id="cms-msg" class="mt-3 text-sm text-green-600"></div>
+    </div>
+  </main>
+
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

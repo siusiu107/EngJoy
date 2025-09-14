@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Level-Up Test — EngJoy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-semibold">EngJoy</a>
+      <nav class="header-nav flex gap-3"></nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold mb-4">Level-Up Test</h2>
+    <p class="text-sm text-gray-600 mb-6">이 테스트는 현재 레벨에서 한 단계 올릴 수 있는지를 확인합니다. 합격하면 레벨이 상향 조정됩니다.</p>
+
+    <div id="test-area" class="bg-white p-6 rounded shadow">
+      <form id="levelup-form" class="space-y-4">
+        <!-- 5 sample moderate questions -->
+        <div>
+          <label class="block font-medium">1) Choose correct sentence: 'If I ____ you, I would wait.'</label>
+          <div class="mt-2">
+            <label><input type="radio" name="lq1" value="a"> was</label><br>
+            <label><input type="radio" name="lq1" value="b"> were</label><br>
+            <label><input type="radio" name="lq1" value="c"> am</label>
+          </div>
+        </div>
+        <div>
+          <label class="block font-medium">2) Choose the best collocation: 'make ____ decision'</label>
+          <div class="mt-2">
+            <label><input type="radio" name="lq2" value="a"> a</label><br>
+            <label><input type="radio" name="lq2" value="b"> an</label><br>
+            <label><input type="radio" name="lq2" value="c"> the</label>
+          </div>
+        </div>
+        <div>
+          <label class="block font-medium">3) Choose correct preposition: 'interested ____ learning'</label>
+          <div class="mt-2">
+            <label><input type="radio" name="lq3" value="a"> in</label><br>
+            <label><input type="radio" name="lq3" value="b"> on</label><br>
+            <label><input type="radio" name="lq3" value="c"> at</label>
+          </div>
+        </div>
+        <div>
+          <label class="block font-medium">4) Choose the passive form: 'They will finish the project.'</label>
+          <div class="mt-2">
+            <label><input type="radio" name="lq4" value="a"> The project will be finished by them.</label><br>
+            <label><input type="radio" name="lq4" value="b"> The project will finish by them.</label><br>
+            <label><input type="radio" name="lq4" value="c"> They will be finished the project.</label>
+          </div>
+        </div>
+        <div>
+          <label class="block font-medium">5) Choose linking word: 'He studied hard, ____ he failed.'</label>
+          <div class="mt-2">
+            <label><input type="radio" name="lq5" value="a"> but</label><br>
+            <label><input type="radio" name="lq5" value="b"> so</label><br>
+            <label><input type="radio" name="lq5" value="c"> and</label>
+          </div>
+        </div>
+
+        <div class="mt-4 flex gap-3">
+          <button id="submit-levelup" type="button" class="px-4 py-2 bg-indigo-600 text-white rounded">Submit</button>
+        </div>
+
+        <div id="levelup-result" class="mt-4 hidden p-4 rounded bg-indigo-50"></div>
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

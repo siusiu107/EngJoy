@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course — EngJoy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-semibold">EngJoy</a>
+      <a href="../auth/login.html" class="px-3 py-2 bg-indigo-500 text-white rounded">Login</a>
+    </div>
+  </header>
+
+  <header class="bg-white shadow">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-semibold">EngJoy</a>
+    <nav class="header-nav flex items-center gap-4"></nav>
+  </div>
+</header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <div class="bg-white rounded shadow p-6">
+      <h2 id="course-title" class="text-2xl font-bold">Course title</h2>
+      <p id="course-desc" class="text-gray-600 mt-2">Course description</p>
+      <hr class="my-4">
+      <div id="lessons-list" class="space-y-3">
+        <!-- lessons -->
+      </div>
+      <a id="start-course" class="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white rounded" href="../lesson/player.html">Start Lesson</a>
+    </div>
+  </main>
+
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

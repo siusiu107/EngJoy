@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lesson Player — EngJoy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-semibold">EngJoy</a>
+      <a href="../auth/login.html" class="px-3 py-2 bg-indigo-500 text-white rounded">Login</a>
+    </div>
+  </header>
+
+  <header class="bg-white shadow">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-xl font-semibold">EngJoy</a>
+    <nav class="header-nav flex items-center gap-4"></nav>
+  </div>
+</header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <div class="bg-white rounded shadow p-6">
+      <h2 id="lesson-title" class="text-xl font-semibold">Lesson Title</h2>
+      <p id="lesson-desc" class="text-gray-600 mt-2">Lesson short description</p>
+
+      <div class="mt-6">
+        <h4 class="font-medium">Listen & Shadow</h4>
+        <audio controls id="lesson-audio" class="w-full mt-2">
+          <source src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="mt-4">
+          <button id="record-btn" class="px-4 py-2 bg-indigo-600 text-white rounded">Record your voice</button>
+          <button id="stop-btn" class="px-4 py-2 border rounded ml-2" disabled>Stop</button>
+        </div>
+        <div id="recordings" class="mt-4 space-y-2"></div>
+      </div>
+
+      <div class="mt-6">
+        <h4 class="font-medium">Quick Quiz</h4>
+        <div id="quiz-area" class="mt-3"></div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
